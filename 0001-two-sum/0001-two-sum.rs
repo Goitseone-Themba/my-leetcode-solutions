@@ -7,6 +7,7 @@ impl Solution {
                 if (nums[i] + nums[j]) == target {
                     ans.push(i.to_string().trim().parse::<i32>().unwrap());
                     ans.push(j.to_string().trim().parse::<i32>().unwrap());
+                    return ans;
                 }
             }
         }
